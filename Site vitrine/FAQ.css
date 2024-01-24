@@ -1,0 +1,83 @@
+/* font-family: 'Engagement', cursive; Police Engagement
+font-family: 'Alice', serif; Police Alice
+font-family: 'Belleza', cursive; Police Belleza */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+/* CSS premiere section */
+.premiere{
+   margin-top: 150px;
+   margin-left: 5px;
+   margin-right: 5px;
+   margin-bottom: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.question{
+   font-family: 'Engagement', cursive;
+   font-size: xx-large;
+   font-weight: lighter;
+   text-decoration: underline #559488;
+   margin-bottom: 10px;
+}
+.reponse{
+   font-family: 'Belleza', cursive;
+   font-weight: bold;
+   white-space: normal;
+   margin-bottom: 10px;
+   white-space: pre-line;
+   }
+#nom, #restrictions, #partage, #repertoire{
+   border: #559488 solid 2px;
+   border-radius: 10px;
+   margin: 10px;
+   flex: 1;
+   padding: 5px;
+   box-sizing: border-box;
+   max-width: 100%;
+}
+/* CSS deuxième section */
+.deuxieme{
+   margin-left: 5px;
+   margin-right: 5px;
+   margin-bottom: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+#moderation, #reglement, #experiences, #temoignages{
+   border: #559488 solid 2px;
+   border-radius: 10px;
+   margin: 10px;
+   padding: 5px;
+   flex: 1;
+   box-sizing: border-box;
+   max-width: 100%;
+}
+@media screen and (max-width: 767px) {
+   .premiere {
+      margin: 0;
+      padding: 0;
+      margin-top: 300px;
+      flex-direction: column;
+      align-items: stretch;
+   }
+
+   #nom, #restrictions, #partage, #repertoire{
+      width: 100%;
+      margin: 0;
+      margin-top: 5px;
+   }
+   .deuxieme{
+      flex-direction: column;
+      align-items: stretch;
+   }
+   #moderation, #reglement, #experiences, #temoignages {
+      width: 100%;
+      margin: 0;
+      margin-top: 5px;
+   }
+}

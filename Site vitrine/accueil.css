@@ -1,0 +1,80 @@
+/* font-family: 'Engagement', cursive; Police Engagement
+    font-family: 'Alice', serif; Police Alice
+    font-family: 'Belleza', cursive; Police Belleza */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS premiere section */
+.premiere{
+    margin-top: 150px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+/* Ajout de medias queries pour rendre la section plus responsive */
+@media screen and (max-width: 767px) {
+    .premiere {
+        margin-top: 300px;
+    }
+}
+.question{
+    font-family: 'Alice', serif;
+    text-decoration: underline #559488;
+}
+.reponse{
+    font-family: 'Belleza', cursive;
+    font-weight: bold;
+    white-space: normal;
+    margin-top: 2px;
+}
+/* CSS deuxième section Carrousel */
+.deuxieme{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 150px;
+}
+.carousel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100vh; Pour centrer le contenu verticalement */
+}
+.carousel{
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.slide{
+    width: 100%;
+    display: none;
+}
+ .slide.active{
+    display: block;
+}
+#bouton1, #bouton2{
+    /* Style des boutons */
+    background: linear-gradient(to right, #FFF7AD,#FFBFE9);
+    font-size: 18px;
+    font-family: 'Alice', serif;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px dotted #559488;
+    margin-right: 10px; /* Espace entre les deux boutons */
+}
+.button{
+        /* Centrage des boutons */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.clique{
+    background-color: white;
+    border-style: dotted;
+    border-color: #559488;
+}

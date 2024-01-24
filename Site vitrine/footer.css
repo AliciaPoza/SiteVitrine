@@ -1,0 +1,11 @@
+/* font-family: 'Engagement', cursive; Police Engagement
+    font-family: 'Alice', serif; Police Alice
+    font-family: 'Forum', cursive; Police Forum */
+/* Footer en fixe */
+#footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+/* CSS navbar */

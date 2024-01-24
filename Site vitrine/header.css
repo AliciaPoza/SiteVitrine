@@ -1,0 +1,87 @@
+/* font-family: 'Engagement', cursive; Police Engagement
+    font-family: 'Alice', serif; Police Alice
+    font-family: 'Belleza', cursive; Police Belleza */
+/* CSS du header */
+#header{
+    height: auto;
+    width: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+.logo-img{
+    height: 80px;
+    max-width: 100px;
+    margin-right: 20px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.titre{ 
+    font-family: 'Engagement', cursive; /* Police Engagement*/
+    color: #559488;
+    text-align: center;
+    font-size: 2em;
+}
+.legende{
+    font-family: 'Alice', sans-serif;
+    font-size: 0.8em;
+    color: #FFBFE9;
+    margin-top: 10px; /* Ajout d'une marge entre le dernier bouton et la légende */
+}
+.menu{
+    margin-top: 10px; /* Ajout d'une marge entre le titre et le menu */
+}
+.menu2 {
+    margin-top: 10px; /* Ajout d'une marge entre les deux boutons */
+}
+.styled {
+    border: 0;
+    height: 40px;
+    width: 125px;
+    line-height: 2.5;
+    padding: 0 10px;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Alice', sans-serif;
+    color: #559488;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #FFF7AD;
+    background-image: #FFF7AD;
+    box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.6),
+        inset -1px -1px 2px #559488;
+}
+/* Ajout des médias en queries pour rendre le header plus responsive */
+@media screen and (min-width: 768px) {
+    #header {
+        flex-direction: row; /* Retour à une disposition en ligne au-dessus de 768px */
+        align-items: center; /* Réalignement des éléments */
+    }
+    .menu {
+        margin-top: 0; /* Supprime la marge entre le titre et le menu */
+    }
+}
+/* Ajoutez une classe pour le bouton "Accueil" actif */
+.styled.active-accueil {
+    background: linear-gradient(0.25turn, #FFBFE9, #FFF7AD, #FFBFE9);
+}
+
+/* Ajoutez une classe pour le bouton "FAQ" actif
+    Couleur pour le bouton "FAQ" actif;*/
+.styled.active-FAQ {
+    background: linear-gradient(0.25turn, #FFBFE9, #FFF7AD, #FFBFE9);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <title>Header</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <img class="logo-img" src="Images/Logo.png">
+        </div>
+        <div class="titre">SoulMirror</div>
+        <div class="menu">
+            <form action="accueil.html">
+                <input type="submit" class="favorite styled" value="Accueil" />
+            </form>
+        </div>
+        <div class="menu2">
+            <form action="FAQ.html">
+                <input type="submit" class="favorite styled" value="FAQ" />
+            </form>
+        </div>
+        <div class="content">
+            <div class="legende">
+                <h2>Bienveillance Ecoute Entraide Respect</h2>
+            </div>
+        </div>
+        
+    <!-- Fonction pour que le bouton change de couleur lorsque l'on se trouve sur la page -->
+        <script>
+            // Obtenez le chemin de la page actuelle (par exemple, "accueil.html" ou "FAQ.html")
+            const currentPage = window.location.pathname;
+            // Obtenez les boutons "Accueil" et "FAQ"
+            const boutonAccueil = document.querySelector('.menu input[value="Accueil"]');
+            const boutonFAQ = document.querySelector('.menu2 input[value="FAQ"]');
+            // Vérifie si la page actuelle correspond à "accueil.html" et ajoute la classe "active" si c'est le cas
+            if (currentPage === '/accueil.html') {
+                boutonAccueil.classList.add('active-accueil');
+            }
+            // Vérifie si la page actuelle correspond à "FAQ.html" et ajoute la classe "active" si c'est le cas
+            if (currentPage === '/FAQ.html') {
+                boutonFAQ.classList.add('active-FAQ');
+            }
+        </script>
+        </header>
+</body>
+</html>
